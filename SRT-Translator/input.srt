@@ -1,0 +1,243 @@
+1
+00:00:00,150 --> 00:00:02,140
+Hello and welcome to this lecture.
+
+2
+00:00:02,250 --> 00:00:06,740
+And in this lecture we will have a brief overview about Django.
+
+3
+00:00:06,960 --> 00:00:11,230
+So what exactly is Django so to understand Django.
+
+4
+00:00:11,250 --> 00:00:15,260
+Let's take an example of a social networking website.
+
+5
+00:00:15,300 --> 00:00:20,730
+So let's say if you want to access a social networking website like Facebook.
+
+6
+00:00:20,820 --> 00:00:27,590
+So what you essentially do is that you open up your browser and you send a request to the browser for
+
+7
+00:00:27,600 --> 00:00:34,580
+example you open up the browser you type in some you are like Facebook dot com slash the user name.
+
+8
+00:00:34,980 --> 00:00:41,560
+So let's say for example you want to extract the information of a user from a social media Web site.
+
+9
+00:00:41,700 --> 00:00:48,180
+If you want to access information of a particular user you type in facebook dot com slash the name of
+
+10
+00:00:48,180 --> 00:00:49,380
+that particular user.
+
+11
+00:00:50,130 --> 00:00:57,000
+So you type this thing in into your browser and what your browser does is that the browser takes this
+
+12
+00:00:57,090 --> 00:01:00,480
+you are a request and it sends it to the so what.
+
+13
+00:01:00,810 --> 00:01:03,890
+So this right here is let's assume Facebook server.
+
+14
+00:01:04,440 --> 00:01:09,120
+So now the job of the server is to take your request.
+
+15
+00:01:09,120 --> 00:01:15,540
+It's going to read your request and depending upon what data you have requested it's going to look at
+
+16
+00:01:15,540 --> 00:01:20,010
+that data and then it's going to find a data of User 1.
+
+17
+00:01:20,130 --> 00:01:22,870
+And it's going to send back a response.
+
+18
+00:01:22,890 --> 00:01:28,800
+So this response is going to be nothing but the profile of that particular user.
+
+19
+00:01:29,190 --> 00:01:36,510
+So for example let's say if you type in facebook dot com slash your user name you will get your user
+
+20
+00:01:36,510 --> 00:01:37,190
+profile.
+
+21
+00:01:37,920 --> 00:01:43,980
+So this is the entire process which happens when you request for a particular web page from a server.
+
+22
+00:01:44,070 --> 00:01:51,270
+So this entire thing is nothing but what happens when you access any kind of Web site on the Internet.
+
+23
+00:01:51,270 --> 00:01:54,960
+So what essentially happens is that you type in a you URL in your browser.
+
+24
+00:01:55,530 --> 00:02:00,990
+And now that browser is actually going to send that you are all to the specific server and request back
+
+25
+00:02:00,990 --> 00:02:02,380
+some data.
+
+26
+00:02:02,400 --> 00:02:09,210
+Now the server was are programmed in such a way that they can handle your request and return an appropriate
+
+27
+00:02:09,210 --> 00:02:10,250
+response.
+
+28
+00:02:10,260 --> 00:02:12,310
+So this is exactly what happened here.
+
+29
+00:02:12,390 --> 00:02:19,170
+But now the main question is how exactly does this particular server know which kind of page or what
+
+30
+00:02:19,170 --> 00:02:21,870
+kind of data it needs to return back to the browser.
+
+31
+00:02:21,900 --> 00:02:28,050
+So the server actually knows this stuff because the SO is actually programmed to handle these client
+
+32
+00:02:28,050 --> 00:02:31,620
+requests and send back appropriate response.
+
+33
+00:02:31,620 --> 00:02:35,000
+Now how exactly can we program these so was.
+
+34
+00:02:35,100 --> 00:02:37,730
+So that's where Django comes into picture.
+
+35
+00:02:37,800 --> 00:02:39,700
+So what exactly is Django.
+
+36
+00:02:39,900 --> 00:02:43,560
+Django is a free and open source Web application framework.
+
+37
+00:02:44,070 --> 00:02:51,210
+So whenever you want to build a web application we use Django and Django is nothing but a framework
+
+38
+00:02:51,360 --> 00:02:58,890
+and a framework is nothing but a collection of multiple components which we can use to build a web application.
+
+39
+00:02:58,890 --> 00:03:04,830
+So as I earlier mentioned a framework is nothing but a collection of components which allows us to build
+
+40
+00:03:04,920 --> 00:03:05,940
+sites faster.
+
+41
+00:03:06,480 --> 00:03:12,720
+So as I earlier mentioned we need to program so was and which angle we can do exactly the same.
+
+42
+00:03:12,750 --> 00:03:19,200
+So Django is called as a backend framework because Django is used for programming the so was and not
+
+43
+00:03:19,260 --> 00:03:20,510
+at the front end.
+
+44
+00:03:20,520 --> 00:03:26,670
+So this is the very specific reason why we call Django as a pack and framework because it is used to
+
+45
+00:03:26,670 --> 00:03:36,360
+program the backend that is the server was now Django also has an automatic admin interface which supports
+
+46
+00:03:36,540 --> 00:03:36,960
+crud.
+
+47
+00:03:38,040 --> 00:03:44,340
+Now if you build any kind of a website so let's say for example you're building an e-commerce Web site.
+
+48
+00:03:44,340 --> 00:03:49,290
+So for that very specific site you also need to build an admin panel as well.
+
+49
+00:03:49,620 --> 00:03:56,040
+So for example there is going to be an admin which is nothing but the main person who is going to handle
+
+50
+00:03:56,040 --> 00:04:03,550
+that entire site and that admin should be allowed to create read update and delete all the data from
+
+51
+00:04:03,550 --> 00:04:04,640
+this site.
+
+52
+00:04:04,650 --> 00:04:09,690
+So for that very purpose you need to provide an admin panel for a particular Web site.
+
+53
+00:04:09,690 --> 00:04:16,590
+But with Django Django actually has a feature which provides an automatic admin interface so that you
+
+54
+00:04:16,590 --> 00:04:18,860
+don't have to design it from scratch.
+
+55
+00:04:18,870 --> 00:04:22,420
+So this is one of the features of Django which we are going to look into.
+
+56
+00:04:22,440 --> 00:04:26,840
+So that was a brief introduction about what exactly Django is.
+
+57
+00:04:26,850 --> 00:04:32,300
+So the only thing which you need to keep in mind for now is that Django is used for programming the
+
+58
+00:04:32,310 --> 00:04:39,330
+so was so that they can return an appropriate response back to the client and Django is nothing but
+
+59
+00:04:39,330 --> 00:04:45,240
+a framework which is a back end framework and a framework is nothing but a collection of components.
+
+60
+00:04:45,270 --> 00:04:52,620
+So a framework is nothing but it's essentially a bunch of code which we can reuse to build sites faster.
+
+61
+00:04:53,400 --> 00:04:59,130
+So without wasting any time in the upcoming lecture we will start building over application with Django.
