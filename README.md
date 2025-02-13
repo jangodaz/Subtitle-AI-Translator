@@ -1,4 +1,4 @@
-# SRT Translator
+# Subtitle  Translator
 
 A robust Python application for translating subtitle files (SRT format) using Google's Gemini AI API. This tool is designed to handle large subtitle files with automatic progress saving, API key rotation, and intelligent error handling.
 
